@@ -5,7 +5,7 @@ import NavbarBase from "./NavbarBase";
 import Icon from "./Icon";
 function Navbar({ isLogin, isAdmin, logOut, cartItem }) {
   return (
-    <div className="bg-gray-900  w-full flex item-center   gap-4">
+    <div className="bg-gray-900  w-full flex item-center   gap-4 fixed top-0 left-0 z-50">
       <div className="bg-gray-900  w-full flex item-center  justify-start gap-4  py-2 px-2">
         <Icon />
       </div>
