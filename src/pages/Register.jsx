@@ -14,7 +14,11 @@ function Register() {
 
   const navigate = useNavigate();
 
-  function navigateToHome() {
+  /*function navigateToHome() {
+    navigate("/");
+  }*/
+
+function navigateToHome() {
     navigate(-1);
   }
 

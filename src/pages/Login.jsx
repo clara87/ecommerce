@@ -2,13 +2,14 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormInput from "../components/FormInput";
 import { User, Mail } from "lucide-react";
+
 function Login({ login, loginAsAdmin }) {
   const [formData, setFormData] = useState({
     email: "",
     contrasenia: "",
   });
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   function loginUser(e) {
     e.preventDefault();
@@ -20,7 +21,7 @@ function Login({ login, loginAsAdmin }) {
       navigate("/dashboard")
     } else {
       login();
-      navigate("/");
+      navigate("/")
     }
     console.log(formData);
   }
@@ -41,7 +42,7 @@ function Login({ login, loginAsAdmin }) {
         >
           <FormInput
             icon={<Mail size={18} />}
-            labelText={"Email"}
+            labelText={"email"}
             inputType={"email"}
             placeholder={"ejemplo@gmail.com"}
             value={formData.email}
@@ -51,8 +52,8 @@ function Login({ login, loginAsAdmin }) {
           />
           <FormInput
             icon={<User size={18} />}
-            labelText={"Contrasenia"}
-            inputType={"password"}
+            labelText={"contrasenia"}
+            inputType={"contrasenia"}
             placeholder={"admin"}
             value={formData.contrasenia}
             onChangeFn={(e) =>
