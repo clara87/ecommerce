@@ -4,7 +4,7 @@ function ProductList({ products }) {
 
   <div className="bg-gray-700 min-h-screen pt-16 px-4 pb-12">
     <div className="max-w-7xl mx-auto">
-      <h1 className="text-emerald-400 text-center text 3x1 mb-2 font-bold">Productos</h1>
+      <h1 className="text-emerald-400 text-center text 3x1 mb-2 font-bold lg:text-4xl">Productos</h1>
       <p className="text-gray-300 text-center mb-8">{products[0].category}</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:gris-cols-3 gap-6">
         {products.map((product) => (
